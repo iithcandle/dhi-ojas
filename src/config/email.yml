@@ -1,0 +1,6 @@
+email:
+  smtpserver: smtp.gmail.com
+  port: 587
+  emailid: whatever@domain.ac.in
+  appkey: blahblah4blah
+

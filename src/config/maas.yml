@@ -1,0 +1,6 @@
+maas:
+  regctrl_endpoint_url: http://regctrl.domain.ac.in:5240
+  oauth:
+    consumer_key: blah
+    token_key: blahblah
+    token_secret: blahblahblah

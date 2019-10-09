@@ -1,0 +1,4 @@
+gnocchi:
+  endpoint_url: http://gnochisrv.domain.ac.in:8041
+  username: admin
+

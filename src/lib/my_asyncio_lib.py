@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 #
-# Copyright (C) 2018-2019 Maruthi Seshidhar Inukonda - All Rights Reserved.
+# Copyright (C) 2018-2021 Maruthi Seshidhar Inukonda - All Rights Reserved.
 # maruthi.inukonda@gmail.com
 #
 # This file is released under the GPLv3 License.

@@ -1,4 +1,4 @@
-hosts:
+machines:
   -
 #    hostname: server1
 #    ip_address: 10.32.154.32

@@ -1,0 +1,4 @@
+influx:
+  endpoint_url: influxdomain.cse.iith.ac.in 
+  username: user
+  password: password

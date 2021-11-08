@@ -1,0 +1,83 @@
+oidmap:
+        {
+                'SNMPv2-SMI::enterprises.318.1.1.1.9.2.3.1.3.1.1.1' : {'io': 'input', 'type': 'voltage', 'phase': 'phase1'},
+                'SNMPv2-SMI::enterprises.318.1.1.1.9.2.3.1.3.1.1.2' : {'io': 'input', 'type': 'voltage', 'phase': 'phase2'},
+                'SNMPv2-SMI::enterprises.318.1.1.1.9.2.3.1.3.1.1.3' : {'io': 'input', 'type': 'voltage', 'phase': 'phase3'},
+                'SNMPv2-SMI::enterprises.318.1.1.1.9.3.3.1.3.1.1.1' : {'io': 'output', 'type': 'voltage', 'phase': 'phase1'},
+                'SNMPv2-SMI::enterprises.318.1.1.1.9.3.3.1.3.1.1.2' : {'io': 'output', 'type': 'voltage', 'phase': 'phase2'},
+                'SNMPv2-SMI::enterprises.318.1.1.1.9.3.3.1.3.1.1.3' : {'io': 'output', 'type': 'voltage', 'phase': 'phase3'},
+                'SNMPv2-SMI::enterprises.318.1.1.1.9.2.3.1.6.1.1.1' : {'io': 'input', 'type': 'current', 'phase': 'phase1'},
+                'SNMPv2-SMI::enterprises.318.1.1.1.9.2.3.1.6.1.1.2' : {'io': 'input', 'type': 'current', 'phase': 'phase2'},
+                'SNMPv2-SMI::enterprises.318.1.1.1.9.2.3.1.6.1.1.3' : {'io': 'input', 'type': 'current', 'phase': 'phase3'},
+                'SNMPv2-SMI::enterprises.318.1.1.1.9.3.3.1.4.1.1.1' : {'io': 'output', 'type': 'current', 'phase': 'phase1'},
+                'SNMPv2-SMI::enterprises.318.1.1.1.9.3.3.1.4.1.1.2' : {'io': 'output', 'type': 'current', 'phase': 'phase2'},
+                'SNMPv2-SMI::enterprises.318.1.1.1.9.3.3.1.4.1.1.3' : {'io': 'output', 'type': 'current', 'phase': 'phase3'},
+                'SNMPv2-SMI::enterprises.318.1.1.1.9.3.3.1.7.1.1.1' : {'io': 'output', 'type': 'load', 'phase': 'phase1'},
+                'SNMPv2-SMI::enterprises.318.1.1.1.9.3.3.1.7.1.1.2' : {'io': 'output', 'type': 'load', 'phase': 'phase2'},
+                'SNMPv2-SMI::enterprises.318.1.1.1.9.3.3.1.7.1.1.3' : {'io': 'output', 'type': 'load', 'phase': 'phase3'},
+                'SNMPv2-SMI::enterprises.318.1.1.1.9.3.3.1.10.1.1.1' : {'io': 'output', 'type': 'percentload', 'phase': 'phase1'},
+                'SNMPv2-SMI::enterprises.318.1.1.1.9.3.3.1.10.1.1.2' : {'io': 'output', 'type': 'percentload', 'phase': 'phase2'},
+                'SNMPv2-SMI::enterprises.318.1.1.1.9.3.3.1.10.1.1.3' : {'io': 'output', 'type': 'percentload', 'phase': 'phase3'},
+                'SNMPv2-SMI::enterprises.318.1.1.1.9.3.3.1.16.1.1.1' : {'io': 'output', 'type': 'percentpower', 'phase': 'phase1'},
+                'SNMPv2-SMI::enterprises.318.1.1.1.9.3.3.1.16.1.1.2' : {'io': 'output', 'type': 'percentpower', 'phase': 'phase2'},
+                'SNMPv2-SMI::enterprises.318.1.1.1.9.3.3.1.16.1.1.3' : {'io': 'output', 'type': 'percentpower', 'phase': 'phase3'}
+        }
+
+ups:
+        ups3:
+                ip: a.b.c.d
+                auth: MD5
+                priv: DES
+                username: upsusername
+                password: mysecurepasswd
+                oids:
+                        - '1.3.6.1.4.1.318.1.1.1.9.2.3.1.3.1.1.1' #upsPhaseInputVoltage phase 1
+                        - '1.3.6.1.4.1.318.1.1.1.9.2.3.1.3.1.1.2' #upsPhaseInputVoltage phase 2
+                        - '1.3.6.1.4.1.318.1.1.1.9.2.3.1.3.1.1.3' #upsPhaseInputVoltage phase 3
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.3.1.1.1' #upsPhaseOutputVoltage phase 1
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.3.1.1.2' #upsPhaseOutputVoltage phase 2
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.3.1.1.3' #upsPhaseOutputVoltage phase 3
+                        - '1.3.6.1.4.1.318.1.1.1.9.2.3.1.6.1.1.1' #upsPhaseInputCurrent Phase 1
+                        - '1.3.6.1.4.1.318.1.1.1.9.2.3.1.6.1.1.2' #upsPhaseInputCurrent Phase 2
+                        - '1.3.6.1.4.1.318.1.1.1.9.2.3.1.6.1.1.3' #upsPhaseInputCurrent Phase 3
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.4.1.1.1' #upsPhaseOutputCurrent Phase 1
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.4.1.1.2' #upsPhaseOutputCurrent Phase 2
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.4.1.1.3' #upsPhaseOutputCurrent Phase 3
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.7.1.1.1' #upsPhaseOutputLoad Phase 1
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.7.1.1.2' #upsPhaseOutputLoad Phase 2
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.7.1.1.3' #upsPhaseOutputLoad Phase 3
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.10.1.1.1' #upsPhaseOutputPercentLoad Phase 1
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.10.1.1.2' #upsPhaseOutputPercentLoad Phase 2
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.10.1.1.3' #upsPhaseOutputPercentLoad Phase 3
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.16.1.1.1' #upsPhaseOutputPercentPower Phase 1
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.16.1.1.2' #upsPhaseOutputPercentPower Phase 2
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.16.1.1.3' #upsPhaseOutputPercentPower Phase 3
+
+        ups4:
+                ip: a.b.c.d
+                auth: MD5
+                priv: DES
+                username: upsusername
+                password: mysecurepasswd
+                oids:
+                        - '1.3.6.1.4.1.318.1.1.1.9.2.3.1.3.1.1.1' #upsPhaseInputVoltage phase 1
+                        - '1.3.6.1.4.1.318.1.1.1.9.2.3.1.3.1.1.2' #upsPhaseInputVoltage phase 2
+                        - '1.3.6.1.4.1.318.1.1.1.9.2.3.1.3.1.1.3' #upsPhaseInputVoltage phase 3
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.3.1.1.1' #upsPhaseOutputVoltage phase 1
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.3.1.1.2' #upsPhaseOutputVoltage phase 2
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.3.1.1.3' #upsPhaseOutputVoltage phase 3
+                        - '1.3.6.1.4.1.318.1.1.1.9.2.3.1.6.1.1.1' #upsPhaseInputCurrent Phase 1
+                        - '1.3.6.1.4.1.318.1.1.1.9.2.3.1.6.1.1.2' #upsPhaseInputCurrent Phase 2
+                        - '1.3.6.1.4.1.318.1.1.1.9.2.3.1.6.1.1.3' #upsPhaseInputCurrent Phase 3
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.4.1.1.1' #upsPhaseOutputCurrent Phase 1
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.4.1.1.2' #upsPhaseOutputCurrent Phase 2
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.4.1.1.3' #upsPhaseOutputCurrent Phase 3
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.7.1.1.1' #upsPhaseOutputLoad Phase 1
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.7.1.1.2' #upsPhaseOutputLoad Phase 2
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.7.1.1.3' #upsPhaseOutputLoad Phase 3
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.10.1.1.1' #upsPhaseOutputPercentLoad Phase 1
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.10.1.1.2' #upsPhaseOutputPercentLoad Phase 2
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.10.1.1.3' #upsPhaseOutputPercentLoad Phase 3
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.16.1.1.1' #upsPhaseOutputPercentPower Phase 1
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.16.1.1.2' #upsPhaseOutputPercentPower Phase 2
+                        - '1.3.6.1.4.1.318.1.1.1.9.3.3.1.16.1.1.3' #upsPhaseOutputPercentPower Phase 3

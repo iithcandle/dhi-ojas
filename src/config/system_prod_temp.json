@@ -1,0 +1,66 @@
+{
+    "PowerEdge R730 (SKU=NotProvided;ModelName=PowerEdge R730)": {
+        "min": 5,
+        "max": 40
+    },
+    "ProLiant DL380 Gen9 (719064-B21)": {
+        "min": 10,
+        "max": 35
+    },
+    "PowerEdge R630 (SKU=NotProvided;ModelName=PowerEdge R630)": {
+        "min": 10,
+        "max": 35
+    },
+    "PRIMERGY RX2540 M2 (ABN:K1566-V401-5622)": {
+        "min": 10,
+        "max": 35
+    },
+    "PRIMERGY RX2540 M2 (ABN:K1566-V401-2420)": {
+        "min": 10,
+        "max": 35
+    },
+    "ProLiant DL380 G7 (583914-B21)": {
+        "min": 10,
+        "max": 35
+    },
+    "ProLiant DL380 Gen10 (868703-B21)": {
+        "min": 10,
+        "max": 35
+    },
+    "SYS-7048GR-TR (Default string)": {
+        "min": 10,
+        "max": 35
+    },
+    "ProLiant DL360p Gen8 (654081-B21)": {
+        "min": 10,
+        "max": 35
+    },
+    "PRIMERGY RX2530 M4 (ABN:K1592-V401-506)": {
+        "min": 5,
+        "max": 45
+    },
+    "DGX-1 (Default string)": {
+        "min": 5,
+        "max": 35
+    },
+    "PowerEdge T630 (SKU=NotProvided;ModelName=PowerEdge T630)": {
+        "min": 10,
+        "max": 35
+    },
+    "PowerEdge R740 (SKU=NotProvided;ModelName=PowerEdge R740)": {
+        "min": 10,
+        "max": 35
+    },
+    "ProLiant XL170r Gen10 (867055-B21)": {
+        "min": 10,
+        "max": 35
+    },
+    "ProLiant DL380 Gen10 (868706-B21)": {
+        "min": 10,
+        "max": 35
+    },
+    "-[7947IDS]- (XxXxXxX)": {
+        "min": 10,
+        "max": 35
+    }
+}

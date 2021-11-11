@@ -36,8 +36,9 @@ On the region controller and all the rack controllers, follow the below configur
 ```
 $ sudo vi /etc/dhi-ojas/email.yml
 $ sudo vi /etc/dhi-ojas/maas.yml
-$ sudo vi /etc/dhi-ojas/gnocchi.yml
-$ sudo vi /etc/dhi-ojas/hosts.yml
+$ sudo vi /etc/dhi-ojas/influx.yml
+$ sudo vi /etc/dhi-ojas/machines_nonmaas.yml
+$ sudo vi /etc/dhi-ojas/machines_skip.yml
 ```
 
 # Testing #
